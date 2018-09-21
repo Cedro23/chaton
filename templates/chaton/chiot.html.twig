@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    <img src="https://static.actu.fr/uploads/2018/06/puppy-1903313-854x569.jpg">
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'src/Controller/ChatonController.php'|file_link(0) }}">src/Controller/ChatonController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'templates/chaton/index.html.twig'|file_link(0) }}">templates/chaton/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}

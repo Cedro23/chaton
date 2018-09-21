@@ -16,4 +16,14 @@ class ChatonController extends AbstractController
             'controller_name' => 'ChatonController',
         ]);
     }
+
+    /**
+     * @Route("/chiot", name="chiot")
+     */
+    public function chiot()
+    {
+        return $this->render('chaton/chiot.html.twig', [
+            'controller_name' => 'ChatonController',
+        ]);
+    }
 }
